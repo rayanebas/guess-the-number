@@ -1,15 +1,15 @@
 import random
 number = random.randint(1,  100)
 
-guess = int(input("Quel est le nombre au quel je pense ?"))
+guess = int(input("What number am I thinking of?"))
 while guess != number:
 
     if guess > number:
-        print("Trop grand")
-        guess = int(input("Quel est le nombre au quel je pense ?"))
+        print("Too high.")
+        guess = int(input("What number am I thinking of?"))
 
     elif guess < number:
-        print("Trop petit")
-        guess = int(input("Quel est le nombre au quel je pense ?"))
+        print("Too low.")
+        guess = int(input("What number am I thinking of?"))
 
-print("Bravo !")
+print("You got it!")
